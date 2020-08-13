@@ -5,6 +5,7 @@
 
 ## Dataset structure
 * PASCAL VOC dataset
+```
 --root
 ---VOC2012
 ----Annotations
@@ -12,8 +13,9 @@
 ----JPEGImages
 ----SegmentationClass
 ----SegmentationObject
-
+```
 * YCB dataset
+```
 --root
 ---train
 ----001_chips_can
@@ -27,8 +29,9 @@
 ---- ....
 ----077_rubiks_cube
 -----masks
-
+```
 * RoboCup@Work dataset
+```
 --root
 ---images
 ----train
@@ -39,7 +42,7 @@
 -----axis
 ----- ....
 ----- motor
-
+```
 ### Training
 ```
 python3 train.py --batch_size,
