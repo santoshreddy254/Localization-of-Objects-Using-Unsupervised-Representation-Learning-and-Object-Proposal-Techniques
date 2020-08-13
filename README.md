@@ -40,6 +40,18 @@
 ----- ....
 ----- motor
 
+### Training
+```
+python3 train.py --batch_size,
+                 --save_after,
+                 --num_epochs,
+                 --dataset,
+                 --dataset_path,
+                 --backbone,
+                 --experiment_number,
+                 --num_epochs,
+```
+
 
 
 
