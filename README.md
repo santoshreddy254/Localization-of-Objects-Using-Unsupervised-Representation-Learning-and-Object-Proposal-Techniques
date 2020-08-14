@@ -89,6 +89,10 @@ python3 localization_eval_atwork.py --wsol_method: select cam or gradCAM,
                                --masks_path: Give the path to masks dataset
 ```
 
+#### Code base is adapted from following repositories
+* https://github.com/clovaai/wsolevaluation
+* https://github.com/jacobgil/pytorch-grad-cam
+
 
 
 
