@@ -330,3 +330,32 @@ def accumulate(scoremap, bbox_real, iou_threshold_list,cam_threshold_list ):
         max_box_acc.append(localization_accuracies.max())
 
     return max_box_acc
+def get_PxAP(gt_true_score_hist,gt_false_score_hist):
+    num_gt_true = gt_true_score_hist.sum()
+    tp = gt_true_score_hist[::-1].cumsum()
+    fn = num_gt_true - tp
+
+    num_gt_false = gt_false_score_hist.sum()
+    fp = gt_false_score_hist[::-1].cumsum()
+    tn = num_gt_false - fp
+
+    if ((tp + fn) <= 0).all():
+        raise RuntimeError("No positive ground truth in the eval set.")
+    if ((tp + fp) <= 0).all():
+        raise RuntimeError("No positive prediction in the eval set.")
+
+    non_zero_indices = (tp + fp) != 0
+
+    precision = tp / (tp + fp)
+    recall = tp / (tp + fn)
+
+    auc = (precision[1:] * np.diff(recall))[non_zero_indices[1:]].sum()
+    return auc
+def get_gt_bbox(mask):
+    contours = cv2.findContours(
+            image=mask,
+            mode=cv2.RETR_TREE,
+            method=cv2.CHAIN_APPROX_SIMPLE)
+    cnt = contours[0]
+    x,y,w,h = cv2.boundingRect(cnt)
+    return [x,y,x+w,y+h]

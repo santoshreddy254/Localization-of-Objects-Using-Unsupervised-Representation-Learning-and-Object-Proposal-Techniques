@@ -1,7 +1,7 @@
 # Localization-of-Objects-Using-Unsupervised-Representation-Learning-and-Object-Proposal-Techniques
 
 ## Requirements
-
+* Given in requirements.txt
 
 ## Dataset structure
 * PASCAL VOC dataset
@@ -61,6 +61,32 @@ python3 classification_eval.py --batch_size: BATCH SIZE (int),
                                --dataset_path: Give the path to dataset,
                                --backbone: Have option of three backbones vgg16, resnet18, squeezenet1_1,
                                --checkpoint_path: Path for trained checkpoint
+```
+
+### Evaluation for localization metrics
+Evaluation on localization metrics for different datasets is carried out differently due to very different structure of datasets.
+* PASCAL VOC dataset
+```
+python3 localization_eval_VOC.py --wsol_method: select cam or gradCAM,
+                               --dataset_path: Give the path to dataset,
+                               --backbone: Have option of three backbones vgg16, resnet18, squeezenet1_1,
+                               --checkpoint_path: Path for trained checkpoint
+```
+* YCB dataset
+```
+python3 localization_eval_YCB.py --wsol_method: select cam or gradCAM,
+                               --dataset_path: Give the path to dataset,
+                               --backbone: Have option of three backbones vgg16, resnet18, squeezenet1_1,
+                               --checkpoint_path: Path for trained checkpoint,
+                               --masks_path: Give the path to masks dataset
+```
+* RoboCup@Work dataset
+```
+python3 localization_eval_atwork.py --wsol_method: select cam or gradCAM,
+                               --dataset_path: Give the path to dataset,
+                               --backbone: Have option of three backbones vgg16, resnet18, squeezenet1_1,
+                               --checkpoint_path: Path for trained checkpoint,
+                               --masks_path: Give the path to masks dataset
 ```
 
 
