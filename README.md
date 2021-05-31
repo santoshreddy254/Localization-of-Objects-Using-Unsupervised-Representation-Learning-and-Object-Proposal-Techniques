@@ -4,13 +4,13 @@
 ![alt text](images/01_Introduction_Image.png)
 
 ## Testing Phase
-![alt text](https://github.com/santoshreddy254/realsense_augmentor/blob/master/src/data/Architecture_1.png)
+![alt text](images/02_Introduction_Image_testing.png)
 
 ## Class Activation Mapping (CAM)
 
-![alt text](https://github.com/santoshreddy254/realsense_augmentor/blob/master/src/data/Architecture_1.png)
+![alt text](images/cam_pipeline.png)
 ## Grad-CAM
-![alt text](https://github.com/santoshreddy254/realsense_augmentor/blob/master/src/data/Architecture_1.png)
+![alt text](images/grad_cam_pipeline.png)
 
 
 ## Requirements
