@@ -19,7 +19,9 @@ convolution layer to generate the class activation maps (CAMs)
 convolutional layer to generate weights
 ![alt text](images/grad_cam_pipeline.png)
 
-
+## Research results
+* Full report on research and results for various experiments are documented in [MuthireddyVSSR-RnDReport](Report%20and%20paper/MuthireddyVSSR-RnDReport.pdf)
+* Plausible publication and unique selling point is in [paper](Report%20and%20paper/WeaSuL_2021_ICLR_rejected.pdf)
 ## Requirements
 ```
 pip install -r requirements.txt
