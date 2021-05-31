@@ -1,7 +1,10 @@
 # Localization-of-Objects-Using-Unsupervised-Representation-Learning-and-Object-Proposal-Techniques
 
 ## Requirements
-* Given in requirements.txt
+```
+pip install -r requirements.txt
+```
+* Given in requirements file
 
 ## Dataset structure
 * PASCAL VOC dataset
