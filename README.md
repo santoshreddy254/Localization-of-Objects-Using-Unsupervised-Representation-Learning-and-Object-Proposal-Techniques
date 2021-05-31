@@ -1,15 +1,22 @@
 # Localization-of-Objects-Using-Unsupervised-Representation-Learning-and-Object-Proposal-Techniques
 
 ## Training Phase
+* Training a deep neural network as a classification model
+* Only class level labels are available
 ![alt text](images/01_Introduction_Image.png)
 
 ## Testing Phase
+* Trained classification model is used to localize objects
+* Generate object level and pixel level labels during testing
 ![alt text](images/02_Introduction_Image_testing.png)
 
 ## Class Activation Mapping (CAM)
-
+* Class Activation Mapping: the confidence score of predicted class is projected back to the preceding
+convolution layer to generate the class activation maps (CAMs)
 ![alt text](images/cam_pipeline.png)
 ## Grad-CAM
+* Gradient Class Activation Mapping architecture. Grad-CAM uses gradient flow passing through last
+convolutional layer to generate weights
 ![alt text](images/grad_cam_pipeline.png)
 
 
