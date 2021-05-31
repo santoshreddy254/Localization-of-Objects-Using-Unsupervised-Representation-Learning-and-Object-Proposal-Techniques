@@ -1,7 +1,7 @@
 # Localization-of-Objects-Using-Unsupervised-Representation-Learning-and-Object-Proposal-Techniques
 
 ## Training Phase
-![alt text](https://github.com/santoshreddy254/realsense_augmentor/blob/master/src/data/Architecture_1.png)
+![alt text](images/01_Introduction_Image.png)
 
 ## Testing Phase
 ![alt text](https://github.com/santoshreddy254/realsense_augmentor/blob/master/src/data/Architecture_1.png)
