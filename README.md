@@ -1,5 +1,5 @@
 # Localization of Objects Using Unsupervised Representation Learning and Object Proposal Techniques 
-[Report](Report%20and%20paper/MuthireddyVSSR-RnDReport.pdf), [paper](Report%20and%20paper/WeaSuL_2021_ICLR_rejected.pdf)
+[Report](Report%20and%20paper/MuthireddyVSSR-RnDReport.pdf), [Paper](Report%20and%20paper/WeaSuL_2021_ICLR_rejected.pdf)
 
 ## Abstract
 Weakly Supervised Object Localization (WSOL) uses classification models
