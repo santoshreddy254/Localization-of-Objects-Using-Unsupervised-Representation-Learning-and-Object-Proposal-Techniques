@@ -1,4 +1,16 @@
-# Localization-of-Objects-Using-Unsupervised-Representation-Learning-and-Object-Proposal-Techniques
+# Localization of Objects Using Unsupervised Representation Learning and Object Proposal Techniques 
+[Report](Report%20and%20paper/MuthireddyVSSR-RnDReport.pdf), [Paper](Report%20and%20paper/WeaSuL_2021_ICLR_rejected.pdf) (WeaSUL 2021 ICLR - Rejected)
+
+## Abstract
+Weakly Supervised Object Localization (WSOL) uses classification models
+trained only on image-level labels to localize objects. Although different WSOL
+techniques have shown results in improving object localization performance under weak supervision, limited studies have analyzed the role of dataset distribution
+on the performance of WSOL techniques. In this paper, we study the effects of
+intra-class variance in the dataset using selected WSOL techniques. We argue that
+intra-class variance is an important factor when applying WSOL techniques. We
+observe from our experiments that 2 baseline methods have a drop in performance
+when trained on datasets with limited intra-class variance. Furthermore, we show
+that artificially augmenting the intra-class variance improves the localization performance.
 
 ## Training Phase
 * Training a deep neural network as a classification model
